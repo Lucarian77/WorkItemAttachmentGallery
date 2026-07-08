@@ -30,6 +30,7 @@ Inline preview is provided for image attachments:
 Other attachment types are shown as file tiles with Open and Download actions.
 <img width="842" height="947" alt="image" src="https://github.com/user-attachments/assets/cd64d79f-61ea-4f16-9064-3cbbd8fd913e" />
 <img width="807" height="1307" alt="image" src="https://github.com/user-attachments/assets/c539a144-ecad-4294-b04f-82b9ecc3ca36" />
+<img width="767" height="857" alt="image" src="https://github.com/user-attachments/assets/a86229b9-e60e-4d2c-a097-50ddb09e289e" />
 
 
 ## Supported file tiles
