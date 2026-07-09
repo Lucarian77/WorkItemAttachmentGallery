@@ -1,0 +1,95 @@
+{
+  "manifestVersion": 1,
+  "id": "work-item-attachment-gallery",
+  "version": "0.2.7",
+  "name": "Work Item Attachment Gallery",
+  "publisher": "AdrianLucaci",
+  "description": "Manage Azure DevOps work item attachments from a clean work item form gallery with previews, file-type tiles, upload, rename, comments, open, download, and remove actions.",
+  "public": true,
+  "categories": [
+    "Azure Boards"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "images/icon.png"
+  },
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "scopes": [
+    "vso.work_write"
+  ],
+  "contributions": [
+    {
+      "id": "attachment-gallery-group",
+      "type": "ms.vss-work-web.work-item-form-group",
+      "description": "Attachment management gallery for Azure Boards work item forms.",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+      "properties": {
+        "name": "Attachments",
+        "uri": "dist/attachmentPreview.html",
+        "height": 700
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "images",
+      "addressable": true
+    },
+    {
+      "path": "overview.md",
+      "addressable": true
+    },
+    {
+      "path": "README.md",
+      "addressable": true
+    },
+    {
+      "path": "LICENSE.txt",
+      "addressable": true
+    }
+  ],
+  "tags": [
+    "azure boards",
+    "work items",
+    "attachments",
+    "attachment preview",
+    "attachment management",
+    "work item attachments",
+    "image preview",
+    "file preview",
+    "documents",
+    "azure devops"
+  ],
+  "links": {
+    "support": {
+      "uri": "https://github.com/Lucarian77/WorkItemAttachmentGallery/issues"
+    },
+    "license": {
+      "uri": "https://github.com/Lucarian77/WorkItemAttachmentGallery/blob/main/LICENSE"
+    },
+    "privacypolicy": {
+      "uri": "https://github.com/Lucarian77/WorkItemAttachmentGallery/blob/main/PRIVACY.md"
+    },
+    "repository": {
+      "uri": "https://github.com/Lucarian77/WorkItemAttachmentGallery"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/Lucarian77/WorkItemAttachmentGallery"
+  }
+}

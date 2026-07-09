@@ -1,0 +1,80 @@
+# Work Item Attachment Gallery
+
+Work Item Attachment Gallery adds a clean attachment management panel to Azure Boards work item forms.
+
+## Features
+
+- Preview image attachments directly in the work item form.
+- Open and download work item attachments.
+- Upload one or more files.
+- Add an optional comment during upload.
+- Rename attachments.
+- Edit attachment comments.
+- Remove attachments from the work item.
+- Uses friendly file tiles for common document, archive, email, text, and code/config formats.
+- Avoids broken image thumbnails by downloading previews through the Azure DevOps extension token.
+
+## Supported previews
+
+Inline preview is provided for image attachments:
+
+- PNG
+- JPG/JPEG
+- GIF
+- BMP
+- WEBP
+- SVG
+
+Other attachment types are shown as file tiles with Open and Download actions.
+
+## Supported file tiles
+
+Common non-image attachment types are displayed with recognizable file-type tiles, including:
+
+- Word: DOC, DOCX, RTF
+- Excel/data: XLS, XLSX, CSV
+- PowerPoint: PPT, PPTX
+- PDF
+- Archives: ZIP, RAR, 7Z
+- Text/logs: TXT, LOG, MD
+- Code/config: JSON, XML, HTML, CSS, JS, TS
+- Email: MSG, EML
+- Generic files
+
+## Permissions
+
+This extension requests **Work items (read and write)** so it can read work item attachment relations and perform attachment management actions such as upload, rename, comment update, and remove.
+
+## Notes
+
+Removing an attachment from the gallery removes the attachment relation from the work item. The extension does not permanently purge files from Azure DevOps storage.
+
+## Latest updates
+
+### v0.2.7 metadata and search update
+
+- Added Marketplace search tags for Azure Boards, work items, attachments, previews, and documents.
+- Added support, license, privacy policy, and repository links to the extension manifest.
+- No runtime behavior changes.
+
+
+### v0.2.6 menu polish
+
+- Shortened the More menu labels for better fit in narrow work item columns.
+- Right-aligned the More menu so it stays inside the attachment panel.
+- Improved menu overflow behavior for compact work item layouts.
+
+## v0.2.5 Marketplace documentation cleanup
+
+- Removed outdated references to search, filtering, sorting, and list/grid toggle from the Marketplace overview.
+- Cleaned up the supported file type wording.
+- Added clearer notes for image previews versus non-image file tiles.
+
+### v0.2.4 logo update
+
+- Added the new Marketplace and extension icon.
+
+### v0.2.3 clean UI update
+
+- Removed the duplicate inner Attachments heading for a cleaner work item form layout.
+- Kept the clean gallery, file-type tiles, upload, rename, comment, remove, open, and download actions.

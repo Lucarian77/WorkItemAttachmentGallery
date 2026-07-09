@@ -1,0 +1,25 @@
+{
+  "name": "work-item-attachment-gallery",
+  "version": "0.2.7",
+  "private": true,
+  "description": "Azure DevOps work item form extension that previews and manages attachments in a clean gallery.",
+  "scripts": {
+    "clean": "rimraf dist out",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "package": "npm run build && tfx extension create --manifest-globs vss-extension.json --output-path out",
+    "package:dev": "npm run build:dev && tfx extension create --manifest-globs vss-extension-dev.json --output-path out"
+  },
+  "dependencies": {
+    "azure-devops-extension-sdk": "latest"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "latest",
+    "rimraf": "latest",
+    "tfx-cli": "latest",
+    "ts-loader": "latest",
+    "typescript": "5.6.3",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}

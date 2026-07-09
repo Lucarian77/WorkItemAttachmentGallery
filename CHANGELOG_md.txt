@@ -1,0 +1,10 @@
+# Changelog
+
+## 0.2.7
+
+Marketplace metadata and search update.
+
+- Added Marketplace search tags.
+- Added support, license, privacy policy, and repository links to the extension manifest.
+- No runtime behavior changes.
+
