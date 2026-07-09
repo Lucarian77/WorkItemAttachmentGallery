@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.6
+
+UI polish update.
+
+- Improved the More menu behavior in narrow work item form layouts.
+- Shortened action labels from Edit comment and Remove attachment to Comment and Remove.
+- Right-aligned the action menu so it stays inside the attachment card.
+- No attachment management behavior changes.
+  
 ## 0.2.5
 
 Marketplace documentation cleanup.
