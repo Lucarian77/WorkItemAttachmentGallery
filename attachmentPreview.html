@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work Item Attachment Gallery</title>
+  <link rel="stylesheet" href="styles/attachmentPreview.css" />
+</head>
+<body>
+  <main id="app" class="wag-shell" aria-live="polite">
+    <section class="wag-header">
+      <div class="wag-summary">
+        <p id="statusText" class="wag-status">Loading attachments...</p>
+      </div>
+      <div class="wag-header-actions">
+        <button id="refreshButton" class="wag-button" type="button">Refresh</button>
+        <button id="toggleUploadButton" class="wag-button wag-primary" type="button">Add file</button>
+      </div>
+    </section>
+
+    <section id="message" class="wag-message wag-hidden"></section>
+
+    <section id="uploadPanel" class="wag-upload-panel wag-hidden" aria-label="Upload attachments">
+      <div id="dropZone" class="wag-drop-zone" tabindex="0">
+        <strong>Drop files here</strong>
+        <span>or choose files to attach to this work item</span>
+        <input id="fileInput" type="file" multiple />
+      </div>
+      <label class="wag-field-label" for="uploadCommentInput">Comment for new attachment(s)</label>
+      <textarea id="uploadCommentInput" class="wag-textarea" rows="2" placeholder="Optional attachment comment"></textarea>
+      <div id="selectedFiles" class="wag-selected-files">No files selected.</div>
+      <div class="wag-upload-actions">
+        <button id="uploadButton" class="wag-button wag-primary" type="button" disabled>Upload selected</button>
+        <button id="clearSelectionButton" class="wag-button" type="button">Clear</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="wag-gallery" aria-label="Work item attachments gallery"></section>
+  </main>
+
+  <div id="lightbox" class="wag-lightbox wag-hidden" role="dialog" aria-modal="true" aria-label="Attachment preview">
+    <button id="lightboxClose" class="wag-lightbox-close" type="button" aria-label="Close preview">×</button>
+    <img id="lightboxImage" alt="Attachment preview" />
+  </div>
+
+  <div id="editDialog" class="wag-dialog-backdrop wag-hidden" role="dialog" aria-modal="true" aria-labelledby="editDialogTitle">
+    <section class="wag-dialog">
+      <h3 id="editDialogTitle">Edit attachment</h3>
+      <p id="editDialogDescription" class="wag-dialog-description"></p>
+      <label id="editTextLabel" class="wag-field-label" for="editTextInput">Value</label>
+      <input id="editTextInput" class="wag-input" type="text" />
+      <textarea id="editTextareaInput" class="wag-textarea wag-hidden" rows="4"></textarea>
+      <div class="wag-dialog-actions">
+        <button id="editCancelButton" class="wag-button" type="button">Cancel</button>
+        <button id="editConfirmButton" class="wag-button wag-primary" type="button">Save</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="attachmentPreview.js"></script>
+</body>
+</html>

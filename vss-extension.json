@@ -1,0 +1,65 @@
+{
+  "manifestVersion": 1,
+  "id": "work-item-attachment-gallery",
+  "version": "0.2.6",
+  "name": "Work Item Attachment Gallery",
+  "publisher": "AdrianLucaci",
+  "description": "Manage Azure DevOps work item attachments from a clean work item form gallery with previews, file-type tiles, upload, rename, comments, open, download, and remove actions.",
+  "public": true,
+  "categories": [
+    "Azure Boards"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "images/icon.png"
+  },
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "scopes": [
+    "vso.work_write"
+  ],
+  "contributions": [
+    {
+      "id": "attachment-gallery-group",
+      "type": "ms.vss-work-web.work-item-form-group",
+      "description": "Attachment management gallery for Azure Boards work item forms.",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+      "properties": {
+        "name": "Attachments",
+        "uri": "dist/attachmentPreview.html",
+        "height": 700
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "images",
+      "addressable": true
+    },
+    {
+      "path": "overview.md",
+      "addressable": true
+    },
+    {
+      "path": "README.md",
+      "addressable": true
+    },
+    {
+      "path": "LICENSE.txt",
+      "addressable": true
+    }
+  ]
+}
